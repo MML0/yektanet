@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'IRANSan';
+    src: url('/noghte/user/app/Sans.woff') format('woff');
+}
+@font-face {
+    font-family: 'Taha';
+    src: url('/noghte/user/app/Tanha-FD-WOL.woff') format('woff');
+}
+
+
+
+body {
+  font-family: 'IRANSan', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0ec5ea;
+
+}
+
+.center {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.login_form_div {
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.input_field {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.input_field:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.login_button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login_button:hover {
+  background-color: #0056b3;
+}
+
+
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+}
+
+.scoreboard {
+  margin: 20px 0;
+  margin-bottom: 50px;
+  position: relative;
+  height: 400px; /* Enough height to accommodate all items */
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: transform 0.5s ease; /* Smooth up/down movement */
+  position: absolute; /* Allow precise placement for animations */
+  width: calc(100% - 10px); /* Fit inside parent with margin */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.user-rank {
+  width: 30px;
+  height: 22px;
+}
+
+.user-name {
+  flex: 1;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.user-score {
+  font-weight: bold;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-start {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-next {
+  background-color: #28a745;
+  color: white;
+  display: none;
+  margin: auto;
+}
+
+.attendance {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+
+
+
+
+
+
+  /* loading section */
+  .loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1000;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ddd;
+    border-top: 5px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-text {
+    font-size: 18px;
+    color: #555;
+    font-family: 'Arial', sans-serif;
+}
+  /* loading section */
+

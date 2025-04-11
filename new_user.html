@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#submitBtn').on('submit', function (e) {
+        e.preventDefault();
+
+    const formData = {
+        first_name: $('#first_name').val(),
+        last_name: $('#last_name').val(),
+        phone: $('#phone').val(),
+        password: $('#password').val(),
+        email: $('#email').val(),
+        avatar: $('#avatar').val()
+    };
+
+    $.ajax({
+        url: 'new_user.php', // Adjust the URL if needed
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify(formData),
+        success: function (result) {
+            alert('User registered successfully!');
+            console.log(result);
+        },
+        error: function (xhr, status, error) {
+            alert('An error occurred: ' + xhr.responseText);
+            console.log(error);
+        }
+    });
+});
+
+        });
+    </script>
+</head>
+<body>
+    <h1>User Registration</h1>
+    <form id="submitBtn"  >
+        <label for="password">password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required><br><br>
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" ><br><br>
+
+        <label for="avatar">Avatar URL:</label>
+        <input type="url" id="avatar" name="avatar"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

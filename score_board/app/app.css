@@ -1,0 +1,375 @@
+@font-face {
+  font-family: 'IRANSan';
+  src: url('/noghte/user/app/Sans.woff') format('woff');
+}
+@font-face {
+  font-family: 'gofte';
+  src: url('/noghte/user/app/GoftehWeb-Heavy.woff') format('woff');
+}
+@font-face {
+font-family: 'goftefanum';
+src: url('/noghte/user/app/GoftehFaNumWeb-Heavy.woff') format('woff');
+}
+html, body {
+overflow: hidden; /* Prevent scrolling */
+height: 100%; /* Ensure the content fits */
+}
+body {
+  font-family: 'IRANSan', sans-serif;
+  font-weight: 700;
+  background-color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+body {
+  font-family: 'IRANSan', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(33, 33, 33, 1);
+
+}
+
+.center {
+  width: 100%;
+  max-width: 400px;
+  padding: 0px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.login_form_div {
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.input_field {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.input_field:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.login_button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login_button:hover {
+  background-color: #0056b3;
+}
+
+
+
+.container {
+  position: relative;
+  text-align: center;
+  background: #00000000;
+  padding: 0px;
+  border-radius: 10px;
+  width: 80%;
+  height: 80%;
+  max-height: 700px;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0;
+  margin-bottom: 50px;
+  position: relative;
+  height: 90%;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: transform 0.5s ease; /* Smooth up/down movement */
+  position: absolute; /* Allow precise placement for animations */
+  width: calc(100% - 200px); /* Fit inside parent with margin */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Rectangle 30 */
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(2px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 40.5px;
+
+}
+
+.user .img_avatar {
+  width: 35px;
+  height: 35px;
+  margin: 0px 0px;
+  
+}
+.div_avatar{
+  background-color: rgba(242, 242, 242, 1);
+  margin-left: 0.5vw;
+  margin-right: 3vw;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  left: 0px;
+}
+.user-rank {
+  /* display: none; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin: 0px 14px;
+  font-family: 'goftefanum' ;
+  font-weight: 900;
+  font-size: 28px;
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  margin: 0px 6vw;
+  margin-left: 7vw;
+
+}
+
+.user-name {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin-left: 10px;
+  font-family: 'gofte' ;
+  font-weight: 900;
+  font-size: 28px;
+  width: 350px;
+  margin: 0px;
+  border-radius: 100px;
+  height: 50px;
+  background-color: rgba(242, 242, 242, 1);
+  margin-left: 2vw;
+}
+
+.user-score {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'goftefanum' ;
+  font-weight: 900;
+  font-size: 28px;
+  border-radius: 100px;
+  width: 150px;
+  height: 50px;
+  background-color: rgba(242, 242, 242, 1);
+  margin: 0px 5vw;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-start {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-next {
+  background-color: #28a745;
+  color: white;
+  display: none;
+  margin: auto;
+}
+
+.attendance {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+  color: #555;
+}
+
+
+  /* loading section */
+.loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1000;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ddd;
+    border-top: 5px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-text {
+    font-size: 18px;
+    color: #555;
+    font-family: 'Arial', sans-serif;
+}
+  /* loading section */
+
+
+
+/* yellow stars section */
+.star{
+  position: absolute;
+  top:0px;
+  transition: opacity 1s ease, transform 0.5s ease;
+  opacity: 0;
+  width: 90px;
+  height: 90px;
+}
+.star img{
+  width: 90px;
+  height: 90px;
+  /* transition: opacity 1s ease, transform 0.5s ease; */
+  /* transition: transform 0.5s ease; */
+}
+/* .star_left img{
+  transform: rotate(0deg);
+}
+.star_right img{
+  transform: rotate(0deg);
+
+} */
+.star_left{
+  left: 10px;
+}
+.star_right {
+  right: 10px;
+}
+
+/* yellow stars section */
+
+
+
+
+/* label section */
+.label_scoreboard{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center ;
+  top: -90px;
+  width: 100%;
+  max-height: 700px;
+}
+.ancer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center ;
+}
+.rank_label{
+  flex: 3;
+  margin-right: 90px;
+}
+.avatar_label{
+  flex: 1;
+
+}
+.name_label{
+  flex: 6;
+}
+.score_label{
+  flex: 3;
+  margin-left: 120px;
+}
+.text_label{
+  color: #ffffff;
+  font-family: 'gofte' ;
+  font-size: 36px;
+  font-weight: 900;
+}
+/* label section */
+
+
+
+  /* back ground section */
+.background path,svg{
+    fill: #333333 !important;
+  }
+    .logo{
+      position: fixed;
+      bottom: 60px;
+      right: 100px;
+    }
+  .background {
+    position: fixed;
+    bottom: -398px;
+    left: -200px;
+    width: 100%;
+    height: 100%;
+    fill: #ff5733;
+    color: rgba(255, 255, 255, 1);
+    z-index: -1; /* Ensures it stays behind other content */
+}
+  /* back ground section */

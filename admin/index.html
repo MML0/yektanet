@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>admin</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" crossorigin="anonymous"></script>
+    <script src="/noghte/admin/app/app.js?v=0.32"></script>
+    <link rel="stylesheet" href="/noghte/admin/app/app.css?v=0.32">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
+        
+    
+</head>
+<body>
+    <div class="loading" id="loading" style="display: none;">
+        <div class="spinner"></div>
+        <p class="loading-text"></p>
+      </div>
+
+
+    <div class="center">
+        <div class="login_form_div">
+          <form id="login-form">
+              <label for="password">Password:</label>
+              <input class="input_field" type="password" id="password" name="password" required placeholder="Enter your password" value=""/>
+              <button type="submit" class="login_button">Login</button>
+          </form>
+        </div>
+    </div>
+
+    <div class="container" style="display: none;">
+      <div class="attendance" id="attendance-info">Attending: 0</div>
+
+      <div class="scoreboard" id="scoreboard">
+          <!-- User divs will be dynamically generated here -->
+      </div>
+      <button class="btn btn-start" id="start-btn">Start Competition</button>
+      <button class="btn btn-reset" id="reset-btn">reset Competition</button>
+      <button class="btn btn-next" id="next-btn">Next</button>
+
+
+
+      </div>
+</body>
+</html>
