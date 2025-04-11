@@ -35,8 +35,8 @@ This is a web-based **Live Quiz Game** developed as a fun and interactive experi
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: HTML, CSS, JavaScript, React
-- **Backend**: PHP (Laravel API)
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: PHP 
 - **Database**: MySQL
 - **Real-time Updates**: AJAX + polling every second
 - **Hosting**: Cloud-based (suitable for 1000+ users)
