@@ -10,9 +10,9 @@ This is a web-based **Live Quiz Game** developed as a fun and interactive experi
 
 👉 [Click here to try the live demo](https://yektanetgame.mml-dev.ir/noghte/user/)
 
-👉 [main screen](https://yektanetgame.mml-dev.ir/noghte/user/)
+👉 [Question screen](https://yektanetgame.mml-dev.ir/noghte/main_screen_dark/)
 
-👉 [main screen](https://yektanetgame.mml-dev.ir/noghte/user/)
+👉 [Scoreboard](https://yektanetgame.mml-dev.ir/noghte/score_board/)
 
 ---
 
